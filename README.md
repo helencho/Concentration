@@ -2,7 +2,7 @@
 
 A game of concentration on React. Test your memory with this memory matching game. 
 
-![Image of game]()
+![Image of game](.public/screen1.png)
 
 
 
