@@ -2,6 +2,10 @@
 
 A game of concentration on React. Test your memory with this memory matching game. 
 
+![Image of game]()
+
+![Gif of gameplay]()
+
 
 ## Built With 
 * [React](https://reactjs.org/) - JavaScript library 
@@ -11,5 +15,8 @@ A game of concentration on React. Test your memory with this memory matching gam
 ## Acknowledgments 
 * Reed 
 
+
 ## To Do 
 * Successfully exit the message box 
+* Keep track of time 
+* Keep track of best time 
