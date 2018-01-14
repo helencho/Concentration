@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
+body {
+    font-size: 10px;
+    background-color: rgb(234, 234, 234);
+    color: white;
+}
+
+.main {
+    margin-top: 2.2rem;
+}
+
+/* BOARD ----- style guide */
+.board {
+    background: linear-gradient(45deg, rgb(255, 0, 170), rgb(162, 0, 198), rgb(121, 0, 245), rgb(0, 161, 250));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 520px;
+    height: 520px;
+    border-radius: 6px;     /* calculation: 5.2 x 1.16 = 6.032 */
+    margin: 0 auto;
+}
+
+.card {
+    background-color: rgb(68, 44, 109); 
+    width: 100px;
+    height: 100px;
+    margin: 1em;
+    border-radius: 6px;
+    position: relative;
+}
+
+/* not being used at the moment */
+.card-active {
+    background-color: rgb(255, 174, 160);   /* lightpink */
+}
+
+img {
+    position: absolute;
+    height: 32px;
+    left: 50%;
+    top: 50%;
+    margin-left: -16px;     /* calculation: 64px / 2 */
+    margin-top: -16px;      /* image size: 64 x 64 */
+}
+
+/* ----- Entire message box style guide ----- */
+.message {
+    width: 240px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1.6px;
+    top: -399px;
+    position: relative;
+    margin: 0 auto;
+}
+  
+.message p {
+    margin: 0;
+}
+  
+  
+/* ----- Top part of message box ----- */
+.top {
+    background-color: rgb(245, 245, 245);
+    height: 70px;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.top p {
+    color: rgb(11, 11, 11);
+    font-size: 22px;
+}
+  
+  
+/* ----- Middle part of message box ----- */
+.middle {
+    height: 120px;
+    background-color: rgb(222, 222, 222);
+    font-size: 14px;
+}
+  
+.middle p {
+    color: rgb(11, 11, 11);
+    top: 20px;
+    line-height: 2rem;
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+}
+  
+  
+/* ----- Bottom part of message box ----- */
+.bottom {
+    display: flex;
+    height: 70px;
+}
+  
+.bottom-left {
+    background-color: rgb(125, 125, 125);
+    width: 70px;
+    border-bottom-left-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.bottom-left:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+.fa {
+    color: white;
+}
+
+.bottom-right {
+    background-color: rgb(60, 60, 60);
+    width: 170px;
+    border-bottom-right-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    outline: none;
+    border: none;
+    border-radius: 22px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1.6px;
+    background-color: rgb(255, 0, 170); /* deeppink */
+    color: rgb(234, 234, 234);
+
+}
+
+button:hover {
+    background-color: rgb(196, 13, 135); /* darker shade of deeppink */
+
+}
+
+/*  Gradient Colors -------------------
+    deepskyblue         rgb(0, 161, 250)
+    darkviolet-purple   rgb(121, 0, 245) 
+    darkviolet-magenta  rgb(162, 0, 198)
+    deeppink            rgb(255, 0, 170) 
+*/ 
+
+/*  Card Colors -------------------------
+    hotpink             rgb(255, 138, 163)
+    lightpink           rgb(255, 174, 160)
+    indigo              rgb(67, 0, 180)
+    indigo-dark         rgb(68, 44, 109)
+*/

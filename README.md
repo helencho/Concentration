@@ -4,7 +4,6 @@ A game of concentration on React. Test your memory with this memory matching gam
 
 ![Image of game]()
 
-![Gif of gameplay]()
 
 
 ## Built With 
