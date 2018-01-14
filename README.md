@@ -11,6 +11,7 @@ On game start:
 
 ## Built With 
 * [React](https://reactjs.org/) - JavaScript library 
+* HTML5/CSS3 
 * [Font Awesome](http://fontawesome.io/) - Scalable vector icons
 
 
@@ -22,3 +23,4 @@ On game start:
 * Successfully exit the message box 
 * Keep track of time 
 * Keep track of best time 
+* Make it live 
