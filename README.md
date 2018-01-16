@@ -1,6 +1,7 @@
 # Concentration 
 
-A game of concentration on React. Test your memory with this memory matching game. 
+
+Test your memory with this memory matching game of concentration. 16 cards are laid facing down. Look for pairs of cards by clicking on them to turn them over, 2 at a time. If you find a matching pair, you may turn over 2 more cards. Turn over all the cards to finish the game.
 
 
 On game start: 
