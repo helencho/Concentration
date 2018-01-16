@@ -9,6 +9,10 @@ On game start:
 ![Image of game](./public/screen1.png)
 
 
+Game play:
+
+![Gameplay](./public/screenplay1.gif)
+
 
 ## Built With 
 * [React](https://reactjs.org/) - JavaScript library 
