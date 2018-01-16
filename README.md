@@ -29,3 +29,4 @@ Game play:
 * Keep track of time 
 * Keep track of best time 
 * Make it live 
+* Add flip animation to the cards 
