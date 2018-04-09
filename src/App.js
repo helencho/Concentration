@@ -123,7 +123,8 @@ class App extends Component {
       index = event.target.name
     }
 
-    // only if there have been less than 2 guesses, go ahead with updating state 
+    // If user clicked on card or image 
+    // And user has clicked on 0 or 1 image before 
     if (index && guesses.length < 2) {
 
       // copy existing board 
@@ -144,26 +145,27 @@ class App extends Component {
     }
   }
 
-  onClickButton = () => {
-    // call populateBoards function to restart the game! 
-    // pass in an argument 
-    if (this.state.guesses.length === 1) {
+  // Reset the state and repopulate the board 
+  onClickPlay = () => {
+    this.setState({
+      board: [],
+      guesses: [],
+      counter: 0,
+      messageBox: false
+    }, () => {
       this.populateBoards()
-      // and close the message box 
-      let newState = [...this.state]
-      console.log(newState)
-    }
-    console.log('clicking button')
+    })
   }
 
-  // HERE!! working on how to make the message box appear and disappear 
-  // might get rid of this.state.messageBox because I don't utilize it well 
-  // something is wrong with overstacking 
+  // Exit message box 
   onClickExit = () => {
-    // close the message box 
-    console.log('clicking exit')
+    this.setState({
+      counter: 0,
+      messageBox: false
+    })
   }
 
+  // Checks to see that game is complete 
   gameComplete = () => {
     if (this.state.counter === 8 && !this.state.messageBox) {
       this.setState({
@@ -174,11 +176,10 @@ class App extends Component {
 
   render() {
     const { answer, board, guesses, counter, messageBox } = this.state
-    console.log(this.state)
+    // console.log(this.state)
 
     if (guesses.length === 2) {
-      // wait 1 second before checking the card
-      window.setTimeout(this.checkCards, 800)
+      window.setTimeout(this.checkCards, 600)
     }
 
     const message = (
@@ -193,9 +194,12 @@ class App extends Component {
         </div>
 
         <div className="bottom">
-          <div className="bottom-left"><p onClick={this.onClickExit}><i className="fa fa-times-circle-o fa-2x" aria-hidden="true"></i>
-          </p></div>
-          <div className="bottom-right"><button onClick={this.onClickButton}>Play again!</button></div>
+          <div className="bottom-left">
+            <p onClick={this.onClickExit}><i className="fa fa-times-circle-o fa-2x" aria-hidden="true"></i></p>
+          </div>
+          <div className="bottom-right">
+            <button onClick={this.onClickPlay}>Play again!</button>
+          </div>
         </div>
 
       </div>
@@ -205,7 +209,7 @@ class App extends Component {
       <div className='main'>
         <Board board={board} handleClick={this.onClickImage} />
         {this.gameComplete()}
-        {messageBox ? message : ''}
+        {messageBox ? message : null}
       </div>
     );
   }
