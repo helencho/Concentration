@@ -142,7 +142,24 @@ button {
 
 button:hover {
     background-color: rgb(196, 13, 135); /* darker shade of deeppink */
+}
 
+/* ----- Github Logo Container ----- */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin: 2.2rem 0;
+}
+
+.logo-container a,
+.logo-container a:visited {
+    text-decoration: none;
+    color: #fd00a4;
+    transition: 0.5s color;
+}
+
+.logo-container a:hover {
+    color: #9800f0;
 }
 
 /*  Gradient Colors -------------------

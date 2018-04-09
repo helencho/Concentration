@@ -210,6 +210,9 @@ class App extends Component {
         <Board board={board} handleClick={this.onClickImage} />
         {this.gameComplete()}
         {messageBox ? message : null}
+        <div className='logo-container'>
+          <a href='https://github.com/helencho' target='_blank'><i className="fab fa-github fa-5x"></i></a>
+        </div>
       </div>
     );
   }
